@@ -1,0 +1,111 @@
+*{margin: 0;padding: 0;border:0;}
+.clear{clear: both;}
+li{list-style: none;}
+a{text-decoration: none;}
+input{outline: none;}
+body{font-family: "PingFang","Droid Sana";}
+a,button,input,textarea{-webkit-tap-highlight-color: rgba(0,0,0,0;)}
+a,button,input,textarea{
+-webkit-tap-highlight-color: rgba(0,0,0,0;)
+-webkit-user-modify:read-write-plaintext-only; 
+}
+@media screen and (width:360px){
+ 	.content{
+		width:360px;
+		height:640px;
+		background: #eeeded;
+	}
+}
+@media screen and (width:412px){
+ 	.content{
+		width:412px;
+		height:732px;
+		background: #eeeded;
+	}
+}
+@media screen and (width:320px){
+ 	.content{
+		width:320px;
+		height:568px;
+		background: #eeeded;
+	}
+}
+@media screen and (width:375px){
+ 	.content{
+		width:375px;
+		height:667px;
+		background: #eeeded;
+	}
+}
+@media screen and (width:414px){
+ 	.content{
+		width:414px;
+		height:736px;
+		background: #eeeded;
+	}
+}
+.top{
+	width:100%;
+	height:2.375rem;
+	background: #464646;
+	padding:0 4.7%;
+	box-sizing: border-box;
+	position: relative;
+}
+.left{
+	width:7.5%;
+	height:68.7%;
+	margin-top:1.6%;
+	position: absolute;
+}
+.left>img{
+	width:68%;
+	height:100%;
+}
+.login_word{
+	width:100%;
+	height:100%;
+	text-align: center;
+	line-height: 2.375rem;
+	color:#FFF;
+	font-size: 1.25rem;
+	
+}
+.middle{
+	width:100%;
+	height:78%;
+	overflow:hidden;
+}
+.section1{
+	width:100%;
+	height:4.0625rem;
+	padding-left:4.4%;
+	box-sizing: border-box;
+	padding-top:3%;
+	padding-bottom:3%;
+	border-bottom: 0.0625rem solid #eeeded;
+	font-size:0.875rem;
+	background: #FFF;
+}
+.section1_img{
+	width:13%;
+	height:100%;
+	float:left;
+}
+.section1_img>img{
+    width: 90%;
+    height: 77%;
+    margin-top: 11%;
+}
+.section1_word{
+	width:87%;
+	height:100%;
+	float:left;
+	padding-left:5%;
+	box-sizing: border-box;
+	color:#737373;
+
+}
+.section1_word>p:nth-child(2){
+	margin-top:2%;
+}

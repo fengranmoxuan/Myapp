@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>兼职区</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<meta name="viewport" content="height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<link href="css/job.css" rel="stylesheet" type="text/css">
+	<body>
+		<div class="content">
+			<div class="container">
+				<div class="top">
+					<div class="topimg"><img src="img/tip/jian2.png" ></div>
+					<div class="topword">兼职区</div>
+					<div class="right"><img src="../img/tip/jiahao.png" alt=""></div>
+					<div class="sousuo">
+						<div class="sanjiao"></div>
+						<div class="search">
+							<div class="search_word"><a href="/addinfo">添加信息</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="middle">
+					<div class="middle-topword">
+						<ul>
+							<li>全部岗位<span><img src="img/job/xia.png"></span></li>
+							<li></li>
+							<li>不限地点<span><img src="img/job/xia.png"></span></li>
+							<li></li>
+							<li>所有方式<span><img src="img/job/xia.png"></span></li>
+						</ul>
+					</div>
+					<div class="middle-content">
+						<div class="middlesection">
+							<div class="middlesectionimg"><div id="jobcolor1">促销导购</div></div>
+							<div class="middlesectionword">
+								<h3>饿了吗临街拉单</h3>
+								<div class="middleinfo">
+									<div class="middleinfoleft">
+										<ul class="middleinfoleftul">
+											<li><span>日结</span><span>免面试</span></li>
+											<li>联系电话:&nbsp;17898765436</li>
+											<li><span><img src="img/job/date.png"></span><span>03-05</span><span><img src="img/job/p.png"></span><span>石景山</span></li>
+										</ul>
+									</div>
+									<div class="middleinforight"><p><span>80</span>元/天</p></div> 
+								</div>
+							</div>
+						</div>
+						<div class="middlesection">
+							<div class="middlesectionimg"><div id="jobcolor2">其他</div></div>
+							<div class="middlesectionword">
+								<h3>会展中心协助</h3>
+								<div class="middleinfo">
+									<div class="middleinfoleft">
+										<ul class="middleinfoleftul">
+											<li><span>日结</span><span>免面试</span></li>
+											<li>联系电话:&nbsp;17898765436</li>
+											<li><span><img src="img/job/date.png"></span><span>03-04</span><span><img src="img/job/p.png"></span><span>朝阳区</span></li>
+										</ul>
+									</div>
+									<div class="middleinforight"><p><span>100</span>元/天</p></div> 
+								</div>
+							</div>
+						</div>
+						<div class="middlesection">
+							<div class="middlesectionimg"><div id="jobcolor3">派单</div></div>
+							<div class="middlesectionword">
+								<h3>美团外卖发单</h3>
+								<div class="middleinfo">
+									<div class="middleinfoleft">
+										<ul class="middleinfoleftul">
+											<li><span>日结</span><span>免面试</span></li>
+											<li>联系电话:&nbsp;17898765436</li>
+											<li><span><img src="img/job/date.png"></span><span>03-05</span><span><img src="img/job/p.png"></span><span>海淀区</span></li>
+										</ul>
+									</div>
+									<div class="middleinforight"><p><span>70</span>元/天</p></div> 
+								</div>
+							</div>
+						</div>
+						<div class="middlesection">
+							<div class="middlesectionimg"><div id="jobcolor4">服务员</div></div>
+							<div class="middlesectionword">
+								<h3>巧大嫂削面帮工</h3>
+								<div class="middleinfo">
+									<div class="middleinfoleft">
+										<ul class="middleinfoleftul">
+											<li><span>日结</span><span>免面试</span></li>
+											<li>联系电话:&nbsp;17898765436</li>
+											<li><span><img src="img/job/date.png"></span><span>03-01</span><span><img src="img/job/p.png"></span><span>大兴区</span></li>
+										</ul>
+									</div>
+									<div class="middleinforight"><p><span>120</span>元/天</p></div> 
+								</div>
+							</div>
+						</div>
+						<div class="middlesection">
+							<% data.forEach(function(value,key){ %>
+							<div class="middlesectionimg"><div id="jobcolor2"><%= value.zhiwei %></div></div>
+							<div class="middlesectionword">
+								<h3><%= value.jobname %></h3>
+								<div class="middleinfo">
+									<div class="middleinfoleft">
+										<ul class="middleinfoleftul">
+											<li><span>日结</span><span>免面试</span></li>
+											<li>联系电话:&nbsp;<%= value.phone %></li>
+											<li><span><img src="img/job/date.png"></span><span><%= value.date %></span><span><img src="img/job/p.png"></span><span><%= value.place %></span></li>
+										</ul>
+									</div>
+									<div class="middleinforight"><p><span><%= value.pay %></span>元/天</p></div> 
+								</div>
+							</div>
+							<% }) %>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<script src="./js/jquery-1.11.3.min.js"></script>
+		<script src="./js/rem.js"></script>	
+		<script>
+			$('.topimg').click(function(){
+				window.history.back();
+			})
+			$('.right').click(function(){
+				$('.sousuo').toggle();
+			})
+			// function rand(m,n){
+			// 	return Math.floor(Math.random()*(n-m+1));
+			// }
+			// var num=rand(-1,2);
+			// console.log(num);
+			// var arr=['#ed9593','#a8df8c','#83bff3','#efa068'];
+			// console.log(arr[num]);
+			// $('#jobcolor5').css('backgroundColor',arr[num]);
+			
+		</script>				
+	</body>
+</html>
+

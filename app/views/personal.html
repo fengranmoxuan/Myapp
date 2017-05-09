@@ -1,0 +1,131 @@
+
+<div class="top1">
+	<div class="me-top1img"><img src="img/me/2.png"></div>
+	<div class="top1word">冰芒</div>
+	<div class="top1pic">
+		<div class="top1pic1"><div>更换头像</div><div><img src="img/me/2.png"></div></div>
+		<div class="top1pic3"><div><img src="img/tip/tiwen1.png"></div><div><a href="/edit">编辑资料</a></div></div>
+	</div>
+	<div class="top1line">有人的地方就有江湖</div>
+</div>
+<div class="middle1">
+	<div class="middle1word1">
+		<div>
+			<ul class="middle1word1ul12">
+				<li id="word1ul12"><img src="img/me/shouji.png"></li>
+				<li>联系电话</li>
+			</ul>
+		</div>
+		<div >
+			<ul class="middle1word1ul2">
+				<li><img src="img/tip/jian1.png"></li>
+				<li>155***91817</li>
+			</ul>
+		</div>
+	</div>
+	<div class="middle1word1">
+		<div>
+			<ul class="middle1word1ul12">
+				<li id="word2ul12"><img src="img/me/shenfen.png"></li>
+				<li>身份证号</li>
+			</ul>
+		</div>
+		<div >
+			<ul class="middle1word1ul2">
+				<li><img src="img/tip/jian1.png" ></li>
+				<li>155***9181447</li>
+			</ul>
+		</div>
+	</div>
+	<div class="middle1word1" style="margin-top:4%;">
+		<div>
+			<ul class="middle1word1ul12">
+				<li id="word3ul12"><img src="img/me/pay.png"></li>
+				<li id="payWay1">支付方式</li>
+			</ul>
+		</div>
+		<div >
+			<ul class="middle1word1ul2">
+				<li><img src="img/tip/jian1.png"></li>
+				<li id="payWay2">支付宝</li>
+			</ul>
+		</div>
+	</div>
+	<div class="middle1word1" style="margin-bottom:4%">
+		<div>
+			<ul class="middle1word1ul12">
+				<li id="word4ul12"><img src="img/me/zhangben.png"></li>
+				<li>账本</li>
+			</ul>
+		</div>
+		<div >
+			<ul class="middle1word1ul2">
+				<li ><img src="img/tip/jian1.png" ></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<div class="middle1word1">
+		<div>
+			<ul class="middle1word1ul12">
+				<li id="word5ul12"><img src="img/me/yue.png"></li>
+				<li>余额</li>
+			</ul>
+		</div>
+		<div >
+			<ul class="middle1word1ul2">
+				<li><img src="img/tip/jian1.png"></li>
+				<li>480.6元</li>
+			</ul>
+		</div>
+	</div>
+	<div class="middle1word6"></div>
+</div>
+<div class="myShadow" >
+	<div class="payWay">
+		<ul>
+			<li>
+				<div class="mark1">
+					<div class="mark2"></div>
+				</div>
+				<div class="payWayword">
+					微信
+				</div>
+			</li>
+			<li>
+				<div class="mark1">
+					<div class="mark2"></div>
+				</div>
+				<div class="payWayword">
+					支付宝
+				</div>
+			</li>
+			<li>
+				<div class="mark1">
+					<div class="mark2"></div>
+				</div>
+				<div class="payWayword">
+					银行卡
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+<script>
+	//点击支付方式的遮罩层
+	$('#payWay1').click(function(){
+		$('.myShadow').show();
+	})
+	$('.payWay ul li').click(function(){
+		$('.mark2').css('background','#FFF');
+		var word=$('.payWayword').eq($(this).index()).text();
+		$('.mark2').eq($(this).index()).css('background','yellow').siblings().css('background','#FFF');
+		$('#payWay2').text(word);
+	})	
+	$('.myShadow').click(function(){
+		$('.myShadow').hide();
+	})
+	
+</script>

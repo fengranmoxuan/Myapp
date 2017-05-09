@@ -1,0 +1,177 @@
+*{margin: 0;padding: 0;border:0;}
+.clear{clear: both;}
+li{list-style: none;}
+a{text-decoration: none;}
+input{outline: none;}
+body{font-family: "PingFang","Droid Sana";}
+a,button,input,textarea{-webkit-tap-highlight-color: rgba(0,0,0,0;)}
+a,button,input,textarea{
+-webkit-tap-highlight-color: rgba(0,0,0,0;)
+-webkit-user-modify:read-write-plaintext-only; 
+}
+@media screen and (width:360px){
+ 	.content{
+		width:360px;
+		height:640px;
+		background: #eeeded;
+	}
+}
+@media screen and (width:412px){
+ 	.content{
+		width:412px;
+		height:732px;
+		background: #eeeded;
+	}
+}
+@media screen and (width:320px){
+ 	.content{
+		width:320px;
+		height:568px;
+		background: #eeeded;
+	}
+}
+@media screen and (width:375px){
+ 	.content{
+		width:375px;
+		height:667px;
+		background: #eeeded;
+	}
+}
+@media screen and (width:414px){
+ 	.content{
+		width:414px;
+		height:736px;
+		background: #eeeded;
+	}
+}
+.top{
+	width:100%;
+	height:2.375rem;
+	background: #464646;
+	padding:0 4.7%;
+	box-sizing: border-box;
+	position: relative;
+}
+.left{
+	width:7.5%;
+	height:68.7%;
+	margin-top:1.6%;
+	position: absolute;
+}
+.left>img{
+	width:100%;
+	height:100%;
+}
+.login_word{
+	width:100%;
+	height:100%;
+	text-align: center;
+	line-height: 2.375rem;
+	color:#FFF;
+	font-size: 1.25rem;
+	
+}
+.middle{
+	width:100%;
+	min-height:78%;
+	overflow:hidden;
+}
+.bookinfo{
+	width:100%;
+	height: 80px;
+	background: #FFF;
+	padding-left:4%;
+	padding-right:1.4%;
+	padding-top:5%;
+	padding-bottom:5%;
+	box-sizing: border-box;
+}
+.bookimg{
+	width:2.6875rem;
+	height:2.6875rem;
+	float:left;
+}
+.bookimg>img{
+	width:100%;
+	height:100%;
+}
+.bookname{
+	width:45%;
+	height:100%;
+	float:left;
+	margin-left:2%;
+}
+.bookname>p:nth-child(1){
+	font-size:1.0rem;
+}
+.bookname>p:nth-child(2){
+	margin-top:0.3125rem;
+	font-size:0.875rem;
+}
+.booktime{
+	width:37%;
+	height:100%;
+	float:left;
+	margin-left:3%;
+	font-size:12px;
+}
+.footer{
+	width:100%;
+	border-top:0.0625rem solid #c1c0c0;
+	height:13.2%;
+	background: #FFF;
+	position: fixed;
+	bottom:0.0rem;
+	left:0.0rem;
+}
+.footercircle{
+	width:100%;
+	height:100%;
+}
+.footercircle>li{
+	width:20%;
+	height:100%;
+	float:left;
+	margin-right:1.5%;
+	margin-left:3.5%;
+	overflow: hidden;
+}
+.footercircle>li>ul>li:nth-child(1){
+	margin-top:0.125rem;
+	width:3.5rem;
+	height:3rem;
+}
+.footercircle>li>ul>li:nth-child(2){
+	width:3.5rem;
+	height:1.45rem;
+	font-size:0.875rem;
+	text-align:center;
+	color:black;
+}
+.footercircle>li>ul>li:nth-child(2)>a{
+	color:#000;
+}
+#find>a>img{
+    width: 76%;
+    height: 63%;
+    margin-left: 11%;
+    margin-top: 19%;
+}
+#store>a>img{
+    width: 60%;
+    height: 63%;
+    margin-left: 21%;
+    margin-top: 19%;
+}
+#info>a>img{
+   	width: 65%;
+    height: 52%;
+    margin-left: 20%;
+    margin-top: 19%;
+}
+#connect>a>img{
+    width: 48%;
+    height: 63%;
+    margin-left: 25%;
+    margin-top: 19%;
+}

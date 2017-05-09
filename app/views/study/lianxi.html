@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>平常练习</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<meta name="viewport" content="height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<!-- <script src="./js/javascript.js"></script> -->
+		<link href="../css/chapter.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="content">
+			<div class="container">
+				<div class="top">
+					<div class="topimg"><img src="../img/tip/jian2.png"></div>
+					<div class="topword1">平常练习</div>
+				</div>
+				<div class="middle">
+				<% data.forEach(function(value,key){ %>
+					<div class="zhangjie"><span>微机原理</span>&nbsp;&nbsp;&nbsp;<span id="chapter"><a href="/study/content"><%= value.chapter%></a></span></div>
+				<% }) %>
+				</div>		
+			</div>
+		</div>	
+		<script src="../js/jquery-1.11.3.min.js"></script>
+		<script src="../js/rem.js"></script>			
+	</body>
+	<script>
+		$('.topimg').click(function(){
+			window.history.back();
+		})
+		$('#chapter a').click(function(){
+			localStorage.setItem('chapter',$(this).text());
+			var text=$(this).text();
+			$.post('/content',{content:text},function(msg){
+				console.log(msg);
+			})
+		})
+	</script>
+</html>
+

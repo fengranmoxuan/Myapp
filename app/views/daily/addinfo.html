@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>添加消息</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" href="../css/jianzhixiaoxi.css">
+	</head>
+	<body>
+		<div class="content">
+			<div class="top">
+				<div class="left"><img src="img/tip/jian2.png" alt=""></div>
+				<div class="login_word">添加消息</div>
+				<div class="right">发布</div>
+			</div>
+			<div class="middle">
+				<div class="me_info3">
+				<form>
+					<div>
+						<div class="me_word">名称</div>
+						<div class="me_back" id="jobname"><input type="text" name="jobname" placeholder="美团外卖发单"></div>
+					</div>
+					<div>
+						<div class="me_word">职位</div>
+						<div class="me_back" id="zhiwei"><input type="text" name="zhiwei" placeholder="派单"></div>
+					</div>
+					<div>
+						<div class="me_word">地点</div>
+						<div class="me_back" id="place"><input type="text" name="place" placeholder="石景山"></div>
+					</div>
+					<div>
+						<div class="me_word">日期</div>
+						<div class="me_back" id="date"><input type="text" name="date" placeholder="05-01"></div>
+					</div>
+					<div>
+						<div class="me_word">工资</div>
+						<div class="me_back" id="pay"><input type="text" name="pay" placeholder="80"></div>
+					</div>
+					<div>
+						<div class="me_word">联系电话</div>
+						<div class="me_back" id="phone"><input type="text" name="phone" placeholder="16789065765"></div>
+					</div>
+				</div>
+				</form>
+			</div>	
+			
+		</div>
+	</body>
+	<script src="./js/jquery-1.11.3.min.js"></script>
+	<script>
+		$('.left').click(function(){
+			  window.history.back();
+		})
+		$('.right').click(function(){
+			var jobname=$('#jobname input').val();
+			var zhiwei=$('#zhiwei input').val();
+			var place=$('#place input').val();
+			var date=$('#date input').val();
+			var pay=$('#pay input').val();
+			var phone=$('#phone input').val();
+			// console.log(jobname,zhiwei,place,pay,phone);
+			$.post('/addjobinfo',{jobname:jobname,zhiwei:zhiwei,place:place,date:date,pay:pay,phone:phone},function(msg){
+				console.log(msg);
+			})
+			var jobname=$('#jobname input').val('');
+			var zhiwei=$('#zhiwei input').val('');
+			var place=$('#place input').val('');
+			var date=$('#date input').val('');
+			var pay=$('#pay input').val('');
+			var phone=$('#phone input').val('');
+		})
+	</script>
+</html>
+

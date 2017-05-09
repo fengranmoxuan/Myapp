@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>修改密码</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no,maximum-scale=1">
+		<meta name = "format-detection" content = "telephone=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<link rel="stylesheet" href="css/xiugaimima.css" />
+	</head>
+	<body>
+		<div class="content">
+			<div class="top">
+				<div class="left"><img src="./img/jiantou.png" alt=""></div>
+				<div class="login_word">修改密码</div>
+			</div>
+			<div class="middle">
+				<div class="sign">
+					<div class="get"><input id="count" type="text" name="phone" value="" placeholder="请输入新密码"></div>
+					<div class="check"><input id="pas1" type="password" name="yanzhengma" value="" placeholder="请确认新密码" ></div>
+				</div>
+				<div class="next">完&nbsp;成</div>
+				
+				
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script>
+		$('.left').click(function(){
+			window.history.back();
+		})	
+	</script>
+</html>

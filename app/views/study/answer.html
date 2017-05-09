@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>我要提问</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<meta name="viewport" content="height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" href="../css/richangwendao.css">
+	</head>
+	<body>
+		<div class="content">
+			<div class="tiwentop">
+				<div class="tileft">
+					取消
+				</div>
+				<div class="timiddle">
+					我要提问
+				</div>
+				<div class="tiright">
+					发送
+				</div>
+			</div>
+			<div class="tiwenmiddle">
+				<div class="tiwenmiddlecontent">
+					<textarea placeholder="写问题..." style="border:none;resize:none;overflow: auto;"></textarea>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/rem.js"></script>					
+<script>
+	$(function(){
+		$('.tiright').click(function(){
+			var info=$('textarea').val();
+			var time=new Date();
+			var year=time.getFullYear();
+			var month=time.getMonth();
+			var day=time.getDate();
+			var hour=time.getHours();
+			var minute=time.getMinutes();
+			var second=time.getSeconds();
+			if(info==''){
+				return false;
+			}else{
+				$.post('/tiwen',{wenti:info,year:year,month:month,day:day,hour:hour,minute:minute,second:second},function(msg){
+					console.log(msg);
+				})
+				window.history.back();
+			}
+		})
+		$('.tileft').click(function(){
+			$('textarea').val('');
+			window.history.back();
+		})		
+	})
+</script>
+

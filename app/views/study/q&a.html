@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>日常问答区</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<meta name="viewport" content="height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<link href="./css/richangwendao.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="content">
+			<div class="container">
+				<div class="top">
+					<div class="topimg"><img src="../img/tip/jian2.png" style="width:100%;height:100%"></div>
+					<div class="topword">日常问答区</div>
+				</div>
+				<div class="middle">
+					<div class="middle1">
+						<ul>
+							<li><div class="middle1first1"><img src="../img/tip/tiwen1.png"></div><div class="middle1first2"><a href="/study/answer">我要提问</a></div></li>
+							<li></li>
+							<li><div class="middle1second1"><a href="">读者服务</a></div><div class="middle1second2"><img src="../img/tip/tiwen2.png"></div></li>
+						</ul>
+					</div>
+					<div class="middle2">
+						<div class="middle21">
+							<div id="tiwen"><a href="#!/">最新提问</a></div>
+							<div id="huida"><a href="#!/newAnswer">最新回答</a></div>
+						</div>
+						<div class="myMiddle22section">
+							<div class="middle22section" id="tiwens" style="display:none" >
+								<% data.forEach(function(value,key){ %>
+								<div class="middle22">
+									<div>
+										<p><a href="/study/huida" style="color:#000;"><%= value.wenti %></a></p>
+									</div>
+									<div class="middle223">
+										<span><%= value.year %>-<%= value.month %>-<%= value.day %></span><span><%= value.hour %>:<%= value.minute %>:<%= value.second %></span><span>sweet</span>
+									</div>
+								</div>
+								<% }) %>
+							</div>
+							<div class="middle22section" id="huidas" style="display:none" >
+								<% data.forEach(function(value,key){ %>
+								<% if(value.huida==null){ %>
+								<%  return false; %>
+								<% }else{ %>
+								<div class="middle22">
+										<div>
+											<p><a href="/study/huida" style="color:#000;"><%= value.wenti %></a></p>
+										</div>
+										<div>
+											<p><a href="/study/huida" style="color:pink;"><%= value.huida %></a></p>
+										</div>
+									
+									<div class="middle223">
+								<% } %>
+										<span><%= value.year %>-<%= value.month %>-<%= value.day %></span><span><%= value.hour %>:<%= value.minute %>:<%= value.second %></span><span>sweet</span>
+									</div>
+								</div>
+								<% }) %>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>	
+		<script src="./js/jquery-1.11.3.min.js"></script>
+		<script src="./js/q&a.js"></script>
+		<script src="./js/rem.js"></script>	
+		<script src="../angular/angular.min.js"></script>
+		<script src="../angular-route/angular-route.min.js"></script>					
+	</body>
+	<script>
+		$('#tiwen').click(function(){
+			$('#tiwens').css('display','block');
+			$('#huidas').css('display','none');
+			// history.go(0); 
+		})
+		$('#huida').click(function(){
+			$('#tiwens').css('display','none');
+			$('#huidas').css('display','block');
+			// location.reload();
+
+		})
+		$('.topimg').click(function(){
+			window.history.back();
+		})
+		
+		$('p').click(function(){
+			var word=$(this).text();
+			$.get('/word1',{word:word},function(msg){
+				console.log(msg);
+			})
+		})
+
+	</script>
+</html>
+

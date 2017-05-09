@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>小王子</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" href="./css/chat.css">
+	</head>
+	<body>
+		<div class="content">
+			<div class="top">
+				<div class="left"><img src="./img/jiantou.png" alt=""></div>
+				<div class="login_word">小王子</div>
+				<div class="right"><img src="./img/me.png" alt=""></div>
+			</div>
+			<div class="middle">
+				<div class="section"></div>
+			</div>
+			<div class="footer">
+				<form action="">
+					<div class="neirong">
+						<input type="text" name="" value="">
+					</div>
+					<div class="send">发送</div>	
+				</form>
+			</div>
+		</div>
+	</body>
+	<script src="./js/jquery-1.11.3.min.js"></script>
+	<script>
+		$('.send').click(function(){
+			var value=$('.neirong input').val();
+			$('.section').text(value);
+		})
+		$('.left').click(function(){
+			window.history.back();
+		})
+		$('.right').click(function(){
+			window.location.href="haoyouinfo.html";
+		})
+	</script>
+</html>
+

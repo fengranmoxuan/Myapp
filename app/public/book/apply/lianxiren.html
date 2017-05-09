@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>联系人</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" href="./css/lianxiren.css">
+	</head>
+	<body>
+		<div class="content">
+			<div class="top">
+				<div class="left"><img src="./img/touxiang.jpg" alt=""></div>
+				<div class="login_word">联系人</div>
+				<div class="right"><a href="../person/search2.html"><img src="./img/sousuo.png" alt=""></a></div>
+			</div>
+			<div class="middle">
+				<div class="haoyou">
+					<div class="circle"></div>
+					<div class="haoyou_word">我的好友</div>
+				</div>
+				<div class="bookinfo">
+					<div class="bookimg"><img src="./img/king.jpg" alt=""></div>
+					<div class="bookname">
+						<p>小王子</p>
+						<p>5册</p>
+					</div>
+					<div class="bookback"><img src="./img/jian1.png" alt=""></div>
+				</div>
+			</div>	
+			<div class="footer">
+				<ul class="footercircle">
+					<li>
+						<ul>
+							<li id="store"><a href="mystore.html"><img src="img/shuwu1.png"></a></li>
+							<li>我的书屋</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li id="find"><a href="jiechutushu.html"><img src="./img/2.png"></a></li>
+							<li>借出图书</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li id="info"><a href="information.html"><img src="img/xiaoxi1.png"></a></li>
+							<li>消息</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li id="connect"><a href="javascript:void(0)"><img src="img/lianxi2.png"></a></li>
+							<li>联系人</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="./js/jquery-1.11.3.min.js"></script>
+	<script>
+		$('.bookinfo').click(function(){
+			window.location.href="../person/haoyouinfo.html";
+		})
+		$('.left').click(function(){
+			window.location.href="../person/me.html";
+		})
+	</script>
+</html>
+

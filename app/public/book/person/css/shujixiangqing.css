@@ -1,0 +1,265 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-size:16px;
+	text-decoration: none;
+	font-family: '微软雅黑';
+}
+@media screen and (width:360px){
+ 	.content{
+		width:360px;
+		height:640px;
+		background: #eeeded;
+	}
+}
+@media screen and (width:412px){
+ 	.content{
+		width:412px;
+		height:732px;
+		background: #eeeded;
+	}
+}
+@media screen and (width:320px){
+ 	.content{
+		width:320px;
+		height:568px;
+		background: #eeeded;
+	}
+}
+@media screen and (width:375px){
+ 	.content{
+		width:375px;
+		height:667px;
+		background: #eeeded;
+	}
+}
+@media screen and (width:414px){
+ 	.content{
+		width:414px;
+		height:736px;
+		background: #eeeded;
+	}
+}
+img{
+	width:auto;
+	max-height:100%;
+}
+.container{
+	width:100%;
+	height:100%;
+}
+
+.top{
+	width:100%;
+	height:2.375rem;
+	background: #464646;
+	padding:0 4.7%;
+	box-sizing: border-box;
+	position: relative;
+}
+.left{
+	width:7.5%;
+	height:68.7%;
+	background: red;
+	margin-top:1.6%;
+	position: absolute;
+}
+.left>img{
+	width:68%;
+	height:100%;
+}
+.right{
+	width:7.5%;
+	height:68.7%;
+	background: red;
+	right:4.7%;
+	top:14.3%;
+	position: absolute;
+}
+.right>img{
+	width:100%;
+	height:100%;
+}
+.sousuo{
+	width:21%;
+	height:50px;
+	background: red;
+	position: fixed;
+	right:6%;
+}
+.login_word{
+	width:100%;
+	height:100%;
+	text-align: center;
+	line-height: 2.375rem;
+	color:#FFF;
+	font-size: 1.25rem;
+	
+}
+.middle{
+	width:100%;
+	height:94%;
+	background: #F3F4F4;
+	overflow:hidden;
+	background: red;
+}
+.middlecontent{
+	width:90%;
+	padding:0 5%;
+	height:100%;
+	background: pink;
+	overflow: hidden;
+}
+
+/*other*/
+.othercontent{
+	width:100%;
+	padding:0 5%;
+	box-sizing:border-box;
+	height:100%;
+	background: red;
+}
+.booksection{
+    width: 100%;
+    height: 100px;
+    padding:2%;
+    background: green;
+    box-sizing: border-box;
+    margin-top: 5%;
+}
+.otherimg{
+	width:23%;
+	height:100%;
+	background: pink;
+	float:left;
+}
+.otherbook{
+	width:70%;
+	height:100%;
+	background: green;
+	float:left;
+	padding:0 3%;
+	box-sizing: border-box;
+}
+.otherbook>ul{
+	color:#ffda44;
+	margin-left:8%;
+}
+.otherbooksection>li:nth-child(2){
+	margin-top:5%;
+}
+.otherbooksection>li:nth-child(3){
+	margin-top:5%;
+}
+.otherbooksection h3{
+	color:#343434;
+}
+#bookp{
+	width: 100%;
+    height: 2.6875rem;
+    background: cyan;
+    color: #c8c7c6;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	display: -webkit-box;
+ 	-webkit-line-clamp: 2;
+ 	-webkit-box-orient: vertical;
+}
+.jianjie{
+	width:100%;
+	height:9.375rem;
+	background: pink;
+}
+.jianjie>ul{
+	color:#ffda44;
+	margin-left:8%;
+}
+.jianjie>ul>li>p{
+	color:#000;
+	position: relative;
+}
+.jianjie>ul>li>p>span{
+	margin-left:9%;
+}
+.jianjie>ul>li:nth-child(1)>p>span{
+    display: block;
+    width: 74%;
+    height: 6.25rem;
+    position: absolute;
+    margin-left: 26%;
+    top: 0px;
+    background: tan;
+    font-size:0.875rem;
+    line-height:1.5rem;
+    overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	display: -webkit-box;
+ 	-webkit-line-clamp: 4;
+ 	-webkit-box-orient: vertical;
+}
+.jianjie>ul>li:nth-child(2)>p>span{
+    width: 3.4375rem;
+    height: 1.1875rem;
+    display: block;
+    background: #ba68c8;
+    border-radius:5px;
+
+    font-size: 0.875rem;
+    text-align:center;
+    color:#FFF;
+    line-height: 1.125rem;
+    position: absolute;
+    margin-left:26%;
+    top:0.0rem;
+}
+.jianjie>ul>li:nth-child(2){
+	margin-top:29%;
+}
+.jianjie1{
+	width:16%;
+	float:left;
+	color:#000;
+}
+.jianjie2{
+	width:70%;
+	float:left;
+	color:#000;
+}
+.bookstate{
+	float:left;
+}
+.jieru{
+	float:left;
+}
+.pinglun{
+    width: 100%;
+    height: 2.5rem;
+    background: blue;
+    margin-top: 5%;
+    overflow:hidden;
+}
+.pinglun_img{
+	width: 11%;
+    height: 26px;
+    margin-top: 2%;
+    background: grey;
+    float:left;
+}
+.pinglun_img>img{
+	margin-left:10%;
+}
+.pinglun_word{
+    float: left;
+    margin-left: 3%;
+    line-height: 2.25rem;
+}
+.pinglun_sign{
+    width: 9%;
+    height: 26px;
+    margin-right: 2%;
+    margin-top: 2%;
+    background: grey;
+    float: right;
+}

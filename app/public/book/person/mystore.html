@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>我的书屋</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" href="./css/mystore.css">
+	</head>
+	<body>
+		<div class="content">
+			<div class="top">
+				<div class="left"><img src="./img/touxiang.jpg" alt=""></div>
+				<div class="login_word">我的书屋</div>
+				<div class="right"><img src="./img/jiahao.png" alt=""></div>
+				<div class="sousuo">
+					<div class="sanjiao"></div>
+					<div class="section">
+						<div class="search">
+							<div class="search_img"><img src="./img/sousuo.png" alt=""></div>
+							<div class="search_word"><a href="search.html">搜索加书</a></div>
+						</div>
+						<div class="erwei">
+							<div class="erwei_img"><img src="./img/tiaoma.png" alt=""></div>
+							<div class="search_word"><a href="">扫码加书</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="middle">
+			</div>	
+			<div class="footer">
+				<ul class="footercircle">
+					<li>
+						<ul>
+							<li id="find"><a href="find1.html"><img src="./img/find1.png"></a></li>
+							<li>发现</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li id="store"><a href="javascript:void(0)"><img src="img/shuwu2.png"></a></li>
+							<li>我的书屋</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li id="info"><a href="information.html"><img src="img/xiaoxi1.png"></a></li>
+							<li>消息</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li id="connect"><a href="lianxiren.html"><img src="img/lianxi1.png"></a></li>
+							<li>联系人</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="./js/jquery-1.11.3.min.js"></script>
+	<script>
+		$('.right').click(function(){
+			$('.sousuo').toggle();
+		})
+		$('.left').click(function(){
+			window.location.href="me.html";
+		})
+	</script>
+</html>
+

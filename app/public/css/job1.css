@@ -1,0 +1,222 @@
+*{
+		margin:0.0rem auto;
+		padding:0.0rem;
+		list-style: none;
+		text-decoration: none;
+		font-size:15px;
+		font-family: '微软雅黑';
+	}
+	img{
+		width:100%;
+	}
+@media screen and (width:360px){
+ 	.content{
+		width:360px;
+		height:622px;
+	}
+}
+@media screen and (width:412px){
+ 	.content{
+		width:412px;
+		height:714px;
+	}
+}
+@media screen and (width:320px){
+ 	.content{
+		width:320px;
+		height:550px;
+	}
+}
+@media screen and (width:375px){
+ 	.content{
+		width:375px;
+		height:649px;
+	}
+}
+@media screen and (width:414px){
+ 	.content{
+		width:414px;
+		height:718px;
+	}
+}
+	.container{
+		width:100%;
+		height:100%;
+	}
+	.top{
+		width:100%;
+		height:9.5%;
+		border-bottom:0.0625rem solid #B7B7B7;
+		background: #FFC640;
+		-webkit-box-shadow:0rem 0.125rem 0.625rem #B7B7B7;	
+	}
+	.topimg{
+		height: 80%;
+		float: left;
+		margin-top: 0.25rem;
+		margin-left:0.625rem;	
+	}
+	.topword{
+		width: 100%;
+	    height: 100%;
+	    text-align: center;
+	    line-height: 3.75rem;
+	    letter-spacing: 0.125rem;
+	    font-size: 1.625rem;
+	    font-family: '微软雅黑';
+	    color:#FFF;
+	}
+	.middle{
+		width:100%;
+		height:90%;
+		overflow:hidden;
+	}
+	.middle-topword{
+	    width: 90%;
+	    height: 10%;
+	    padding: 0 5%;
+	    border-bottom: 0.0625rem solid #929292;
+	}
+	.middle-topword ul{
+		width:100%;
+		height:100%;
+	}
+	.middle-topword ul>li{
+	    float: left;
+	    width: 33.1%;
+	    height: 100%;
+	    line-height: 3.75rem;
+	    font-size: 1.0rem;
+	    text-align: center;
+	}
+	.middle-topword ul>li>span{
+		margin-left:0.125rem;
+	}
+
+	.middle-topword ul>li>span>img{
+	    width: 1.5rem;
+		height: 1.0rem;
+	}
+	.middle-topword ul>li:nth-child(2){
+		margin-top:0.625rem;
+		width:0.0625rem;
+		height:2.5rem;
+		background:black;
+	}
+	.middle-topword ul>li:nth-child(4){
+		margin-top:0.625rem;
+		width:0.0625rem;
+		height:2.5rem;
+		background:black;
+	}
+	.middle-content{
+	    width: 100%;
+	    height: 90%;
+	}
+	.middlesection{
+		width:100%;
+		height:8.125rem;
+		margin-bottom: 0.625rem;
+	}
+	.middlesectionimg{
+		width:20%;
+		height:100%;
+		padding:0 5% 0 10%;
+		float:left;
+	}
+	.middlesectionimg>div{
+        width: 100%;
+	    height: 60%;
+	    margin-top: 35%;
+	    text-align: center;
+	    line-height: 8.25rem;
+	    font-size: 1.5rem;
+}
+	}
+	.middlesectionword{
+		width:65%;
+		height:100px;
+		float:left;
+	}
+	.middlesectionword>h3{
+	    width: 60%;
+	    font-size: 20px;
+	    font-weight: 100;
+	}
+	.middleinfo{
+		width:100%;
+		height:58%;
+		padding:3.5% 0%;
+	}
+	.middleinfoleft{
+		width:70%;
+		height:100%;
+		float:left;
+	}
+	.middleinforight{
+		width:30%;
+		height:100%;
+		float:right;
+	}
+	.middleinfoleftul>li:nth-child(1)>span:nth-child(1){
+		display:inline-block;
+		background: #78D4AD;
+		padding:0.0rem 0.3125rem;
+		margin-left:0.3125rem;
+		font-size:0.875rem;
+		color:#FFF;
+	}
+	.middleinfoleftul>li:nth-child(1)>span:nth-child(2){
+		background: #F4A848;
+		margin-left:0.9375rem;
+		padding:0.0rem 0.3125rem;
+		font-size:0.875rem;
+		color:#FFF;
+		display:inline-block;
+	}
+	.middleinfoleftul>li:nth-child(2){
+	    font-size: 14px;
+	    margin-left: 0.3125rem;
+	    margin-top: 0.6875rem;
+	    color: #505050;
+	}
+	.middleinfoleftul>li:nth-child(3)>span{
+	    display: inline-block;
+    	margin-top: 1%;
+	}
+	.middleinfoleftul>li:nth-child(3)>span:nth-child(1){
+		width:1.25rem;
+		height:1.25rem;
+		margin-left:0.3125rem;
+		margin-top:0.3125rem;
+	}
+	.middleinfoleftul>li:nth-child(3)>span:nth-child(1)>img{
+		width:100%;
+	}
+	.middleinfoleftul>li:nth-child(3)>span:nth-child(2){
+		margin-left: 2%;
+	}
+	.middleinfoleftul>li:nth-child(3)>span:nth-child(3){
+	    margin-left: 12%;
+   	 	width: 9%;
+	}
+	.middleinfoleftul>li:nth-child(3)>span:nth-child(3)>img{
+		width:100%;
+	}
+	.middleinfoleftul>li:nth-child(3)>span:nth-child(4){
+		margin-left:0.3125rem;
+	}
+	.middleinforight{
+		text-align:right;
+		line-height:5.9375rem;
+		font-size:1.5rem;
+	}
+	.middleinforight>p{
+	    margin-right: 0.5rem;
+	}
+	.middleinforight>p>span{
+	    font-size: 1.125rem;
+	    color: #D77067;
+	}
+	
+	

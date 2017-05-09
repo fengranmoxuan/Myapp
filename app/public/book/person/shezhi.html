@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>设置</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" href="./css/shezhi.css">
+	</head>
+	<body>
+		<div class="content">
+			<div class="top">
+				<div class="left"><img src="./img/jiantou.png" alt=""></div>
+				<div class="login_word">设置</div>
+			</div>
+			<div class="middle">
+				<div class="me_info3">
+					<div>
+						<div class="me_word">新消息提醒</div>
+						<div class="me_back">
+							<div class="white_circle"></div>
+							<div class="white_circle1"></div>
+							<div class="white_circle2"></div>
+						</div>
+					</div>
+				</div>
+			</div>	
+			
+		</div>
+	</body>
+	<script src="./js/jquery-1.11.3.min.js"></script>
+	<script>
+		$('.white_circle1').click(function(){
+			$('.white_circle').animate({right:'45px'},"slow");
+		})
+		$('.white_circle2').click(function(){
+			$('.white_circle').animate({right:'5px'},"slow");
+		})
+		$('.left').click(function(){
+			window.history.back();
+		})
+	</script>
+</html>
+

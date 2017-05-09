@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>期末考试区</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<meta name="viewport" content="height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<!-- <script src="./js/javascript.js"></script> -->
+		<link href="../css/english.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="content">
+			<div class="container">
+				<div class="top">
+					<div class="topimg"><img src="../img/tip/jian2.png"></div>
+					<div class="topword1"></div>
+				</div>
+				<div class="middle">
+					<div class="middlecontent">
+						 <div class="middlecontentimg">
+							<div>
+								<div class="middleimgtop">
+									<div class="middleimgtopimg"><img src="../img/learn/9.png"></div>
+									<div class="middleimgtopword"><a href="/study/finally">继续上次</a></div>
+								</div>
+							</div>
+							<div>
+								<div class="middleimgtop">
+									<div class="middleimgtopimg" style="float:right;"><img src="../img/learn/5.png"></div>
+									<div class="middleimgtopword" style="float:left;"><a href="/study/lianxi">平常练习</a></div>
+								</div>
+							</div>
+							<div>
+								<div class="middleimgtop">
+									<div class="middleimgtopimg"><img src="../img/learn/6.png" style="height:70%;margin-top:10%;"></div>
+									<div class="middleimgtopword"><a href="/q&a">同学交流</a></div>
+
+								</div>
+							</div>
+							<div>
+								<div class="middleimgtop">
+									<div class="middleimgtopimg" style="float:right;"><img src="../img/learn/11.png"></div>
+									<div class="middleimgtopword" style="float:left;"><a href="/study/fuxiziliao">复习资料</a></div>
+
+								</div>
+							</div>
+							
+						</div> 
+					</div>
+					<div class="middlecontentword">
+						<div class="middlecontentword1">
+							<div class="middlecontentword2"><h3>多练习</h3><p>多多进行试题练习，进而提高做题感</p></div>
+						</div>
+						<div class="middlecontentword1">
+							<div class="middlecontentword2"><h3>多看书</h3><p>和同学老师交流，解决自己不懂的问题</p></div>
+						</div>
+						<div class="middlecontentword1">
+							<div class="middlecontentword2"><h3>多交流</h3><p style="line-height: 40px;">多种答题技巧答题更方便</p></div>
+						</div>
+
+					</div>
+					
+				</div>		
+			</div>
+		</div>	
+		<script src="./js/jquery-1.11.3.min.js"></script>
+		<script src="./js/rem.js"></script>	
+		<script>
+			$('.topimg').click(function(){
+				window.history.back();
+			})
+			var subject=localStorage.getItem('subject');
+			$('.topword1').text(subject);
+		</script>		
+	</body>
+</html>
+

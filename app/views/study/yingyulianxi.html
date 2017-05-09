@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>整卷练习</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<meta name="viewport" content="height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<!-- <script src="./js/javascript.js"></script> -->
+		<link href="../css/chapter.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="content">
+			<div class="container">
+				<div class="top">
+					<div class="topimg"><img src="../img/tip/jian2.png"></div>
+					<div class="topword1">整卷练习</div>
+				</div>
+				<div class="middle">
+					<div class="zhangjie"><a href="/study/yingyucontent">听力</a></div>
+					<div class="zhangjie"><a href="/study/yingyucontent">阅读</a></div>
+					<div class="zhangjie"><a href="/study/yingyucontent">写作</a></div>
+					<div class="zhangjie"><a href="/study/yingyucontent">翻译</a></div>
+				</div>		
+			</div>
+		</div>	
+		<script src="../js/jquery-1.11.3.min.js"></script>
+		<script src="../js/rem.js"></script>			
+	</body>
+	<script>
+		$('.topimg').click(function(){
+			window.history.back();
+		})
+		$('.zhangjie').click(function(){
+			localStorage.setItem('yingyufeilei',$(this).text());
+			console.log($(this).text());
+		})
+	</script>
+</html>
+

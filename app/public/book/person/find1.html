@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>发现</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" href="./css/find1.css">
+	</head>
+	<body>
+		<div class="content">
+			<div class="top">
+				<div class="left"><img src="./img/touxiang.jpg" alt=""></div>
+				<div class="login_word">发现</div>
+				<div class="right"><img src="./img/jiahao.png" alt=""></div>
+				<div class="sousuo">
+					<div class="sanjiao"></div>
+					<div class="search">
+						<div class="search_img"><img src="./img/sousuo.png" alt=""></div>
+						<div class="search_word"><a href="search.html">搜索借书</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="middle">
+				<div class="yijie">
+					<div class="img1"><img src="./img/yijie.png" alt=""></div>
+					<div class="word1"><a href="yijietushu.html">已借图书</a></div>
+				</div>
+				<div class="nearby">
+					<div class="book">
+						<div class="img2"><img src="./img/fujin1.png" alt=""></div>
+						<div class="word2"><a href="nearbybook.html">附近图书</a></div>
+					</div>
+					<div class="friend">
+						<div class="img3"><img src="./img/fujin2.png" alt="" style=" width: 61%;height: 61%;margin-top: 22%;margin-left: 20%;"></div>
+						<div class="word3"><a href="fujinshuyou.html">附近书友</a></div>
+					</div>
+				</div>
+				<div class="tuijijan">
+					<div class="book">
+						<div class="img2" style="background: #7a87c2;"><img src="./img/qunzu.png" alt="" style="    width: 76%;height: 61%;margin-top: 22%;margin-left: 11%;"></div>
+						<div class="word2"><a href="tuijian.html">推荐群组</a></div>
+					</div>
+					<div class="friend">
+						<div class="img3" style="background: #e4326f;"><img src="./img/yijie.png" alt=""></div>
+						<div class="word3"><a href="tuijianbook.html">推荐图书</a></div>
+					</div>
+				</div>
+			</div>	
+			<div class="footer">
+				<ul class="footercircle">
+					<li>
+						<ul>
+							<li id="find"><a href="javascript:void(0)"><img src="./img/find2.png"></a></li>
+							<li>发现</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li id="store"><a href="mystore.html"><img src="img/shuwu1.png"></a></li>
+							<li>我的书屋</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li id="info"><a href="information.html"><img src="img/xiaoxi1.png"></a></li>
+							<li>消息</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li id="connect"><a href="lianxiren.html"><img src="img/lianxi1.png"></a></li>
+							<li>联系人</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="./js/jquery-1.11.3.min.js"></script>
+	<script>
+
+		$('.right').click(function(){
+			$('.sousuo').toggle();
+		})
+		$('.left').click(function(){
+			window.location.href="me.html";
+		})
+	</script>
+</html>
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>期末考试区</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<meta name="viewport" content="height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<!-- <script src="./js/javascript.js"></script> -->
+		<link href="css/english.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="content">
+			<div class="container">
+				<div class="top">
+					<div class="topimg"><a href="/section"><img src="img/tip/jian2.png"></a></div>
+					<div class="topword1">期末考试区</div>
+				</div>
+				<div class="middle">
+					<div class="searchcontent">
+						<div class="searchinput"><input type="text" name="title" placeholder="请输入你的专业名称"></div>
+						<div class="searchbtn">搜索</div>	
+					</div>
+					<div class="searchresult">
+					</div>
+				</div>		
+			</div>
+		</div>	
+		<script src="./js/jquery-1.11.3.min.js"></script>
+		<script src="./js/rem.js"></script>			
+	</body>
+	<script>
+		$(function(){
+			$('.searchbtn').click(function(){
+				var value=$('input').val();
+				$('input').val(null);
+				$.get('/sousuo',{title:value},function(data){
+					var msg=data.split(" ");
+					for(var i=0;i<msg.length;i++){
+						var str='';
+						str+='<p class="kecheng" onclick="getname()"><a href="#">'+msg[i]+'</a></p>';//<a href="/finalExam">
+						$('.searchresult').append(str);  //<a href="/finalExam">       
+					}
+				})
+			})
+			$('.topimg').click(function(){
+				window.history.back();
+			})
+			
+		})	
+		var click=true;
+		function getname(){
+			if(click){
+				$('p').bind('click',function(){
+					localStorage.setItem('subject',$(this).text());
+					$('p a').attr('href','/finalExam');
+				})
+				click=false;	
+			}else{
+				click=true;
+			}
+		}
+	</script>
+
+</html>
+

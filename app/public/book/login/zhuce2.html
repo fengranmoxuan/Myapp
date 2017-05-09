@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no,maximum-scale=1">
+		<meta name = "format-detection" content = "telephone=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<link rel="stylesheet" href="css/zhuce.css" />
+	</head>
+	<body>
+		<div class="content">
+			<div class="top">
+				<div class="back"><img src="./img/jian2.png"></div>
+				<div class="login_word">注册</div>
+			</div>
+			<div class="middle">
+				<div class="sign">
+					<div class="get"><input type="password"   placeholder="请输入密码"></div>
+					<div class="check"><input type="password"   placeholder="确认密码" ></div>
+				</div>
+				<div class="next">完成</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script>
+		$('.check input').blur(function(){
+			var val1=$('.get input').val();
+			var val2=$('.check input').val();
+			if(val1===val2){
+				$('.next').click(function(){
+					window.location.href="login1.html";
+				})	
+			}else{
+				return false;
+			}
+		})
+		$('.back').click(function(){
+			window.history.back();
+		})
+	</script>
+</html>

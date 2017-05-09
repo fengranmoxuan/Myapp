@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>我</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" href="./css/me.css">
+	</head>
+	<body>
+		<div class="content">
+			<div class="top">
+				<div class="left"><img src="./img/jiantou.png" alt=""></div>
+				<div class="login_word">我</div>
+			</div>
+			<div class="middle">
+				<div class="me_info1">
+					<div class="touxiang">
+						<div class="touxiang_img"><img src="./img/touxiang.jpg" alt=""></div>
+						<div class="touxiang_word">
+							<p>彼岸那悲伤</p>
+							<p>ID.1234567</p>
+						</div>
+						<div class="touxiang_back"><img src="./img/jian1.png" alt=""></div>
+					</div>
+					<div class="qianming">
+						<div class="qianming1">个性签名</div>
+						<div class="qianming2">个性签名性名</div>
+					</div>
+				</div>
+				<div class="me_info2">
+					<div class="jieru">
+						<div>借入</div>
+						<div>0</div>
+					</div>
+					<div class="jiechu">
+						<div>借出</div>
+						<div>0</div>
+					</div>
+					<div class="dianhua">
+						<div>电话</div>
+						<div>18765434567</div>
+					</div>
+					<div class="yue">
+						<div>余额</div>
+						<div>0</div>
+					</div>
+				</div>
+				<div class="me_info3">
+					<div id="shezhi">
+						<div class="me_word">设置</div>
+						<div class="me_back"><img src="./img/jian1.png" alt=""></div>
+					</div>
+					<div id="password">
+						<div class="me_word">修改密码</div>
+						<div class="me_back"><img src="./img/jian1.png" alt=""></div>
+					</div>
+					<div id="help">
+						<div class="me_word">帮助与反馈</div>
+						<div class="me_back"><img src="./img/jian1.png" alt=""></div>
+					</div>
+					<div id="about">
+						<div class="me_word">关于</div>
+						<div class="me_back"><img src="./img/jian1.png" alt=""></div>
+					</div>
+				</div>
+				<div class="exit">
+					<div class="exitcontent">退出登录</div>
+				</div>
+			</div>	
+			
+		</div>
+	</body>
+	<script src="./js/jquery-1.11.3.min.js"></script>
+	<script>
+		$('.left').click(function(){
+			window.history.back();
+		})
+		$('.touxiang').click(function(){
+			window.location.href="bianjiziliao.html";
+		})
+		$('#shezhi').click(function(){
+			window.location.href="shezhi.html";
+		})
+		$('#password').click(function(){
+			window.location.href="xiugaimima.html";
+
+		})
+		$('#help').click(function(){
+			window.location.href="fankui.html";
+
+		})
+		$('#about').click(function(){
+			window.location.href="about.html";
+
+		})
+		$('.exitcontent').click(function(){
+			window.location.href="../../neirong#!/daily";
+		})
+	</script>
+</html>
+

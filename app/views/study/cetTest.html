@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="module">
+	<head>
+		<title>英语6级</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<meta name="viewport" content="height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<link href="../css/english.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="content" >
+			<div class="container">
+				<div class="top" id="chose46">
+					<div class="topimg"><img src="../img/tip/jian2.png"></div>
+					<div class="topword14"><a href="#!/">英语4级</a></div>
+					<div class="topword24"><a href="#!/cetTest6">英语6级</a></div>	
+				</div>
+				<div class="middle" ng-view>		
+				</div>		
+			</div>
+		</div>	
+		<script src="../js/jquery-1.11.3.min.js"></script>
+		<script src="../js/javascript.js"></script>
+		<script src="../js/rem.js"></script>
+		<script src="../angular/angular.min.js"></script>
+		<script src="../angular-route/angular-route.min.js"></script>		
+		<script>
+			var module=angular.module('module',['ngRoute']);
+			module.config(function($routeProvider){
+				$routeProvider
+				.when('/',{
+					templateUrl:"./study/cetTest4"
+				})
+				.when('/cetTest6',{
+					templateUrl:"./study/cetTest6"
+				})
+			})
+		</script>	
+		<script>
+			$('.topimg').click(function(){
+				window.history.back();
+			})
+		</script>
+	</body>
+</html>
+

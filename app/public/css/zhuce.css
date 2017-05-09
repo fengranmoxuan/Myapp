@@ -1,0 +1,133 @@
+*{
+    margin:0.0rem auto;
+    padding:0.0rem;
+    list-style: none;
+    text-decoration: none;
+    font-size:15px;
+    font-family: '微软雅黑';
+}
+@media screen and (width:360px){
+    .content{
+        width:360px;
+        height:622px;
+    }
+}
+@media screen and (width:412px){
+    .content{
+        width:412px;
+        height:714px;
+    }
+}
+@media screen and (width:320px){
+    .content{
+        width:320px;
+        height:550px;
+    }
+}
+@media screen and (width:375px){
+    .content{
+        width:375px;
+        height:649px;
+    }
+}
+@media screen and (width:414px){
+    .content{
+        width:414px;
+        height:718px;
+    }
+}
+.content{
+	background:#EEE;
+	overflow:hidden;
+}
+.main{
+    width:100%;
+    height:100%;
+}
+.top{
+    width:100%;
+    height:2.375rem;
+    padding:4% 7.7%;
+    box-sizing: border-box;
+    position: relative;
+}
+.left{
+    width: 8%;
+    height: 100%;
+    position: absolute;
+}
+.left>img{
+    width:100%;
+    height:100%;
+}
+.right{
+    width:7.5%;
+    height:68.7%;
+    right:4.7%;
+    top:14.3%;
+    position: absolute;
+}
+.right>img{
+    width:100%;
+    height:100%;
+}
+.login_word{
+    width:100%;
+    height:100%;
+    text-align: center;
+    line-height: 2.375rem;
+    color:#FFF;
+    font-size: 1.25rem;
+    
+}
+.form{
+    width:100%;
+    height:80%;
+    padding:3% 8%;
+    box-sizing: border-box;
+}
+#pas1{
+    width:100%;
+    height:3.4375rem;
+    margin-top:7%;
+    padding:3%;
+    font-size:1.25rem;
+    box-sizing: border-box;
+    border:0.0625rem solid #cccbcb;
+    outline: none;
+}
+#pas2{
+    width:100%;
+    height:3.4375rem;
+    margin-top:7%;
+    padding:3%;
+    font-size:1.25rem;
+    box-sizing: border-box;
+    border:0.0625rem solid #cccbcb;
+    outline: none;
+}
+#count{
+    width:100%;
+    height:3.4375rem;
+    margin-top:7%;
+    padding:3%;
+    font-size:1.25rem;
+    box-sizing: border-box;
+    border:0.0625rem solid #cccbcb;
+    outline: none;
+}
+#submit{
+    width:100%;
+    height:3.4375rem;
+    margin-top:10%;
+    background: #93d69b;
+    border-radius:10px;
+    font-size:1.375rem;
+    outline:none;
+    border:none;
+}
+#choice{
+    margin-top:8%;
+    width:1.375rem;
+    height:1.375rem;
+}

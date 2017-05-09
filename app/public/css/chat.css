@@ -1,0 +1,149 @@
+*{
+	margin:0px;
+	padding:0px;
+	list-style: none;
+	font-size:16px;
+	text-decoration: none;
+	font-family: '微软雅黑';
+}
+@media screen and (width:360px){
+ 	.content{
+		width:360px;
+		height:622px;
+		background: #eeeded;
+	}
+}
+@media screen and (width:412px){
+ 	.content{
+		width:412px;
+		height:714px;
+		background: #eeeded;
+	}
+}
+@media screen and (width:320px){
+ 	.content{
+		width:320px;
+		height:550px;
+		background: #eeeded;
+	}
+}
+@media screen and (width:375px){
+ 	.content{
+		width:375px;
+		height:649px;
+		background: #eeeded;
+	}
+}
+@media screen and (width:414px){
+ 	.content{
+		width:414px;
+		height:718px;
+		background: #eeeded;
+	}
+}
+
+img{
+	width:100%;
+	height:100%;
+}
+.container{
+	width:100%;
+	height:100%;
+}
+.top{
+	width:100%;
+	height:9.5%;
+	border-bottom:0.125rem solid #777878;
+	background: #5394E6;
+	position:relative;	
+}
+
+.topimg{
+	height: 80%;
+    top: 0.25rem;
+    left:0.625rem;
+	position: absolute;
+}
+.topword1{
+	width:100%;
+	height: 100%;
+    text-align: center;
+    letter-spacing: 0.125rem;
+    font-size: 1.625rem;
+    line-height: 3.75rem;
+    font-family: '微软雅黑';
+    color: #eff3f4;
+			
+}
+.middle{
+	width:100%;
+	height:90%;
+	background: #F3F4F4;
+	overflow:hidden;
+}
+.lesson-content{
+    width: 100%;
+    height: 78%;
+    padding: 10% 5% 0 5%;
+    box-sizing: border-box;
+    margin-top: 10%;
+}
+.lessonsection{
+    width: 50%;
+    height: 9.375rem;
+    float:left;
+}
+.lesson-content>div:nth-child(odd){
+    padding-right:2.5%;
+    box-sizing: border-box;
+}
+.lesson-content>div:nth-child(even){
+    padding-left:2.5%;
+    box-sizing: border-box;
+}
+.lessonimg{
+    width:100%;
+    height:85%;
+    position: relative;
+}
+
+.mengban{
+	width:100%;
+	height:100%;
+	padding:3% 5% 3% 3%;
+	background: rgba(0,0,0,0.5);
+	box-sizing: border-box;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.mengban>h3{
+	width:100%;
+	height: 30%;
+	line-height: 2.1875rem;
+	font-size:1.125rem;
+	font-weight:normal;
+	color:#FFF;
+}
+.mengban>p{
+	margin-top:12%;
+	font-size:1.0rem;
+	color:#FFF;
+	line-height:1.25rem;
+}
+#movie{
+	background: url('../img/play/4.png');
+	background-size:cover;
+}
+#music{
+	background: url('../img/play/3.png');
+	background-size:cover;
+}
+#school{
+	background: url('../img/play/2.png');
+	background-size:cover;
+}
+#other{
+	background: url('../img/play/1.png');
+	background-size:cover;
+}

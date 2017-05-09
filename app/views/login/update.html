@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>账户密码</title>
+		<link rel="stylesheet" type="text/css" href="../css/zhuce.css">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	</head>
+	<body>
+		<div class="content">
+			<div class="main">
+				<div class="top">
+					<img src="../img/login/jian.png">
+				</div>
+				<div class="form">
+					<form action="/reLogin" method="post">
+						<input type="text" name="count" value="" placeholder='<%= count%>' id="count">
+						<input type="password" name="password1" value="" placeholder="密码" id="pas1">
+						<input type="password" name="password2" value="" placeholder="确认密码" id="pas2">
+						<input type="submit" value="注&nbsp;&nbsp;册" id="submit">
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="../js/jquery-1.11.3.min.js"></script>
+		<script src="../js/rem.js"></script>
+		<script>
+			$('.top').click(function(){
+				window.history.back();
+			})
+		</script>
+	</body>
+</html>

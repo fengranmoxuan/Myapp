@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no,maximum-scale=1">
+		<meta name = "format-detection" content = "telephone=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<link rel="stylesheet" href="css/login.css"/>
+	</head>
+	<body>
+		<div class="content">
+			<div class="top">
+				<div class="back"><img src="./img/jian2.png"></div>
+				<div class="login_word">注册</div>
+			</div>
+			<div class="middle">
+				<div class="logal"></div>
+				<div class="sign">
+					<div class="get"><input type="text" name="phone" value="" placeholder="15501159572"></div>
+					<div class="check"><input type="text" name="yanzhengma" value="12345" placeholder="密码"></div>
+				</div>
+				<div class="next">登&nbsp;陆</div>
+				<div class="info">
+					<div class="sign_in">注册</div>
+					<div class="forget">忘记密码</div>
+				</div>
+				<div class="login_way">
+					<div class="qq">
+						<div class="img"><img src="img/qq.png" alt="" / id="imgqq"></div>
+						<div class="word">QQ登陆</div>
+					</div>
+					<div class="wechat">
+						<div class="img"><img src="img/wechat.png" alt="" /></div>
+						<div class="word">微信登陆</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script>
+		var input=$('.check input');
+		var val1=input.val();
+		var val2='';
+		var length=val1.length;
+		for(var i=0;i<length;i++){
+			val2+="*";
+		}
+		input.val(val2);
+		$('.next').click(function(){
+			window.location.href='qidong1.html';
+		})
+	</script>
+</html>

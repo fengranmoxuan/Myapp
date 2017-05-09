@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="module">
+	<head>
+		<title>学习区</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name="viewport" content="height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<link href="./css/index.css" rel="stylesheet" type="text/css">
+		<link href="./css/me.css" rel="stylesheet" type="text/css">
+		<link href="./css/footer.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="./Swiper-3.4.1/dist/css/swiper.min.css">
+		<script src="./Swiper-3.4.1/dist/js/swiper.jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="content" >
+			<div class="container">
+				<div class="content1">
+					<div class="My-content" ng-view></div>
+					<div class="footer">
+						<ul class="footercircle">
+							<li>
+								<ul>
+									<li><a href="#!/"><img src="img/tip/1.2.png"></a></li>
+									<li>学&nbsp;&nbsp;习</li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li><a href="#!/play"><img src="img/tip/2.png"></a></li>
+									<li>娱&nbsp;&nbsp;乐</li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li><a href="#!/daily"><img src="img/tip/3.png"></a></li>
+									<li>生&nbsp;&nbsp;活</li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li><a href="#!/personal"><img src="img/tip/4.png"></a></li>
+									<li>我</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="./js/jquery-1.11.3.min.js"></script>
+<script src="./js/javascript.js"></script>
+<script src="./js/rem.js"></script>
+<script src="./angular/angular.min.js"></script>
+<script src="./angular-route/angular-route.min.js"></script>
+<script>
+	var module=angular.module('module',['ngRoute']);
+	module.config(function($routeProvider){
+		$routeProvider
+		.when('/',{
+			templateUrl:"./learn"
+		})
+		.when('/play',{
+			templateUrl:"./play"
+		})
+		.when('/daily',{
+			templateUrl:"./daily"
+		})
+		.when('/personal',{
+			templateUrl:"./personal"
+		})
+	})
+</script>
